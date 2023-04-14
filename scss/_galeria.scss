@@ -1,0 +1,27 @@
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	width: 95%;
+	margin: auto;
+	grid-gap: 5px;
+	>a {
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}
+	img {
+		width: 90%;
+		vertical-align: top;
+		height: 90%;
+		object-fit: 90%;
+		transition: transform 0.5s;
+	}
+	a {
+		&:hover {
+			img {
+				filter: blur(2px);
+				transform: rotate(5deg) scale(1.1);
+			}
+		}
+	}
+}

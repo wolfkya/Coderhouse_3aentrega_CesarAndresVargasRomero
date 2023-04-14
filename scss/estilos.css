@@ -1,0 +1,124 @@
+body {
+  background-image: url(/assets/img/fondo1.jpg);
+}
+body .logo_navbar img {
+  height: 50px;
+}
+body .carousel-item {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 500px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+.red-social img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 5px;
+}
+.galeria > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.galeria img {
+  width: 90%;
+  vertical-align: top;
+  height: 90%;
+  -o-object-fit: 90%;
+     object-fit: 90%;
+  transition: transform 0.5s;
+}
+.galeria a:hover img {
+  filter: blur(2px);
+  transform: rotate(5deg) scale(1.1);
+}
+
+.tarjetas {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tarjetas img {
+  height: 90%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=estilos.css.map */
